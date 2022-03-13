@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/618007f65e.js' crossorigin='anonymous'></script>
+
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='choix.css'>
+	<script src='choix.js'></script>
+	</head>
+	<body>
+		<div class="nav">
+<i onclick="resultat()" class='fas fa-chevron-left' style='font-size:30px;color:#000;margin:15px;
+'></i>
+
+
+	<span id="span-icon">
+	<img id="icon" onclick="panier1()" src="https://www.thetrainline.com/public/img/b6aafd2350adb8ddfd3b.svg" alt="menu"/>
+	
+	<img id="myBtn" style="width:20%;" class="menu" onclick="btn1()" src="https://www.thetrainline.com/public/img/66e1affb9960867039fa.svg" alt="menu"/>
+	
+	<img id="icon"  src="https://www.iconbolt.com/iconsets/gridicons/user-circle.svg"/>
+	</span>
+		</div>
+		
+		<h3>Choix du billet</h3>
+		
+		<div class="recap">
+		<h5>Aller dim. 6 févr.</h5>
+		<span id="p">
+		<img src="https://i.postimg.cc/RZJVsZzN/70-FA0477-85-F8-496-D-81-FE-3-A7-FCD1-AE44-B-removebg-preview.png"/>
+</span>
+<span id="d">
+		<h4 id="text1">12:52&nbsp;&nbsp; Paris Montparnasse</h4>
+<p style="margin-left:20%;color:gray;font-size:15px;">2h 2m,0 correspondance</p>
+<h4 id="text2">14:54&nbsp;&nbsp;Nantes</h4>
+		</span>
+		</div>
+<div class="input-group">
+  <button type="button" onclick="sec()" class="form-control">2nde classe</button>
+  <button type="button" onclick="pre()" class="form-control">1ère classe</button><//button>
+</div>
+
+		<div class="prix">
+		<div class="child_left">
+		<h3 style="font-weight:500;font-size:20px;">Aller</h3>
+		<h3 id="100"></h3>
+		</div> 
+		<div class="child_right">
+		<button type="button" onclick="voyage()">Continuer</button>
+		</div> 
+		</div>
+		
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+	<div class="modal-header1">
+	  <span class="close" onclick="span1()">&times;</span>
+	  <h2>&nbsp;</h2>
+	</div>
+	
+   
+
+	<div class="modal-body">
+	  <p>Billet de train et de bus</p>
+	  <p>Achat de carte ou abonnement</p>
+	  <p>Professionnel</p>
+	  <p>Télécharger l'app</p>
+	  <p>Recup'Retard</p>
+	  <p>Aide</p>
+	</div>
+	<div class="modal-footer1">
+	 <h2>&nbsp;</h2>
+	</div>
+  </div>
+
+</div>
+	</body>
+</html>

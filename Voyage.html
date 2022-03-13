@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset='utf-8'>
+	
+	<title>Page Title</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+	
+	<script src='https://kit.fontawesome.com/618007f65e.js' crossorigin='anonymous'></script>
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='voyage.css'>
+	<script src='voyage.js'></script>
+	</head>
+	
+	<body>
+		<div class="nav">
+<i onclick="choix()" class='fas fa-chevron-left' style='font-size:30px;color:#000;margin:15px;
+'></i>
+
+
+	<span id="span-icon">
+	<img id="icon" onclick="panier1()" src="https://www.thetrainline.com/public/img/b6aafd2350adb8ddfd3b.svg" alt="menu"/>
+	
+	<img id="myBtn" style="width:20%;" class="menu" onclick="btn1()" src="https://www.thetrainline.com/public/img/66e1affb9960867039fa.svg" alt="menu"/>
+	
+	<img id="icon"  src="https://www.iconbolt.com/iconsets/gridicons/user-circle.svg"/>
+	</span>
+		</div>
+		
+			<h3>Qui voyage ?</h3>
+			
+			<div class="info">
+	<i style="width:5%;display:inline-block;margin:auto;" class="bi bi-info-circle"></i>
+<p style="width:85%;margin:auto;display:inline-block;float:right;">Les informations ci-dessous sont nécessaires à la réservation. Le nom des passagers doit correspondre à leur pièce d'identité.</p>
+			</div>
+			
+		
+			<h6 style="margin-top: 25%;">Gagnez du temps : saisissez vos informations avec</h6>
+		
+					
+<form method="get" action="#">
+<label>Envoyer l'e-mail de confirmation à :</label><br />
+<input type="email" id="mail" autocomplete="off" onkeyup="verifmail()" placeholder="Adresse e-mail" required/>
+
+<h6 style="padding:10px 0px 10px 0px;">Adulte</h6>
+
+	<label>Prénom</label>
+<input type="text"onkeyup="verifprenom()" id="prenom" 
+ required/>
+
+
+	<label>Nom</label>
+<input type="text" id="nom" onkeyup="verifnom()"required/>
+
+</form>
+<label>Date de naissance</label>
+	<div class="date">
+	<input style="width: 20%;" id="date" onkeyup="verifdate()" class="input_date" type="tel" maxlength="2" placeholder="JJ"/>
+
+<select id="mois" class="form-select form-select-sm" aria-label=".form-select-sm example" onkeyup="verifmois()" style="width:35%;display:inline-block;padding:9px 10px;">
+  <option selected>Mois</option>
+  <option value="1">janvier</option>
+  <option value="2">février</option>
+  <option value="3">mars</option>
+   <option value="4">avril</option>
+  <option value="5">mai</option>
+  <option value="6">juin</option>
+   <option value="7">juillet</option>
+  <option value="8">août</option>
+  <option value="9">septembre</option>
+   <option value="10">octobre</option>
+  <option value="11">novembre</option>
+  <option value="12">décembre</option>
+</select>
+
+
+	<input style="width: 25%;" id="annee" onkeyup="verifannee()" class="input_date" type="tel" maxlength="4" placeholder="AAAA"/>
+	</div>
+
+
+<button onclick="valid()">Continuer vers le paiement</button>
+
+<p style="text-align:center;font-size:90%;margin-top:30px">La politique de confidentialité s'applique.</p>
+	
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+	  <div class="modal-header1">
+		<span onclick="span1()" class="close">&times;</span>
+		<h2>&nbsp</h2>
+	  </div>
+	  
+	 
+  
+	  <div class="modal-body">
+		<p>Billet de train et de bus</p>
+		<p>Achat de carte ou abonnement</p>
+		<p>Professionnel</p>
+		<p>Télécharger l'app</p>
+		<p>Recup'Retard</p>
+		<p>Aide</p>
+	  </div>
+	  <div class="modal-footer1">
+	   <h2>&nbsp</h2>
+	  </div>
+	</div>
+  
+  </div>
+  
+	</body>
+</html>

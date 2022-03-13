@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The trainline</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+		<meta charset="utf-8"/>
+<script type="text/javascript" src="index.js"></script>
+
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/618007f65e.js' crossorigin='anonymous'></script>
+
+<link rel="stylesheet" type="text/css" href="index.css"/>
+	</head>
+	<body>
+	<div class="nav">
+	<img src="https://cdn.dividendmax.com/companies/trainline-plc.png" alt="logo_trainline"/>
+<span id="span-icon">
+<img id="icon" onclick="panier()" src="https://www.thetrainline.com/public/img/b6aafd2350adb8ddfd3b.svg" alt="menu"/>
+
+<img id="icon" class="menu" onclick="btn1()" src="https://www.thetrainline.com/public/img/66e1affb9960867039fa.svg" alt="menu"/>
+
+<img id="icon"  src="https://www.iconbolt.com/iconsets/gridicons/user-circle.svg"/>
+</span>
+	</div>
+
+<h3>Trouvez des billets à petit prix</h3>
+<div class="input">
+
+	<form id="auto-suggest" method="post">
+	<input id="depart" onblur="red()" class="search1" type="text" name="search" placeholder="Gare de depart" autocomplete="off"/> 
+</form>
+
+<form id="auto-suggest1" action="#" method="post">
+
+	<input id="arrive" onblur="red1()" class="search2" type="text" name="search1" placeholder="Gare d'arrivée" onclick="lance()" autocomplete="off"/>
+</form>
+
+</div>
+
+
+
+
+<div class="input-group">
+  <input id="Aller" onclick="type1()" onblur="red2()" type="text" placeholder="Aller" class="form-control">
+  <input id="Retour" onclick="type1()" onblur="red3()" type="text" placeholder="Retour" class="form-control">
+</div>
+
+<div class="inputA_parent">
+	<select id="select" onblur="red4()" class="inputA">
+		<option value="0">nombres de voyageurs</option>
+		<option value="1">1 adulte</option>
+		<option value="2">2 adulte</option>
+		<option value="3">3 adulte</option>
+	</select>
+</div>
+
+<div class="button_parent">
+<button class="btn" type="button" onclick="search()">Rechercher</button>
+</div>
+
+<h5>Ils nous font confiance. Nous vendons leurs billets.</h5>
+
+<div class="icon">
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/sncf.svg"/>
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/ouigo.svg"/>
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/blablacar_bus.svg"/>
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/thalys.svg"/>
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/eurostar_@4x.png"/>
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/tgv_lyria-v2.svg"/>
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/db.svg"/>
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/trenitalia-v2.svg"/>
+
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/sncb.svg"/>
+
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/italo.svg"/>
+
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/ns.svg"/>
+
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/renfe.svg"/>
+
+<img class="icon_item" src="https://static.trainlinecontent.com/content/WEB/images/carriers/v2/color/cff.svg"/>
+
+</div>
+
+<div class="travel">
+<img src="https://i.ibb.co/h9KsWmK/58-B0-B0-A8-09-C9-471-A-A37-C-60476-C29-BC82-removebg-preview.png" alt="icon_travel"/>
+<h3>Voyagez à prix réduit</h3>
+<p>Avec les cartes SNCF Avantage ou Liberté, bénéficiez d'au moins 30 % de réduction, y compris sur les Prem's.</p>
+
+<button class="card">Acheter une carte</button>
+<br />
+</div>
+
+<div class="trajet">
+<h3>Trajets populaires</h3>
+<p>Choisissez votre prochaine destination en France ou en Europe et achetez vos billets en ligne en quelques clics. Vous ne savez pas encore où aller ? Découvrez nos idées de voyage.</p>
+</div>
+
+
+<div class="fr-eu">
+<button id="fr" onclick="change()" class="fr">France</button>
+<button id="eu" onclick="change1()" class="eu">Europe</button>
+
+<button style="background-color:darkblue;"id="fr-bottom" class="bottom-round"></button>
+<button id="eu-bottom" class="bottom-round"></button>
+
+<div style="color:rgb(62, 107, 255);text-align:center;" class="list">
+<br />
+<p>Paris à Marseille</p>
+<p>Paris à Lyon</p>
+<p>Train de Paris à Bordeaux</p>
+<p>Train de Paris à Metz</p>
+<p>Marseille à Nice</p>
+<p>Train Nice Paris</p>
+<p>Paris à Perpignan en train</p>
+<p>Lyon à Bordeaux en train</p>
+<p>Train de Paris à Lille</p>
+<p>OUIGO Bordeaux Paris</p>
+<p>Train Paris Strasbourg</p>
+<p>Train de Paris à Deauville </p>
+<p>OUIGO Strasbourg Paris</p>
+<p>OUIGO Lyon Marseille</p>
+<p>Paris à Rouen</p>
+<p>Billets de train</p>
+<p>Horaires des trains</p>
+<p>Trains OUIGO</p>
+<p>Trains SNCF</p>
+<p>Horaires trains SNCB</p>
+</div>
+
+</div>
+<br />
+<div class="suite">
+<hr style="margin:auto;width:100%;">
+<br />
+<p>Contacter Trainline</p><p>Offres d'emploi</p><p>Plan du Site</p><p>Sites Trainline</p><p>Qui sommes-nous ?</p><p>CGV & Informations légales</p><p>Informations presse</p><p>Données personnelles / Cookies</p><p>Pour les entreprises</p>
+</div>
+<div class="lien">
+<hr style="margin:auto;width:90%;">
+<p><b>Aide et questions fréquentes</b></p>
+<hr style="margin:auto;width:90%;">
+<p><b>Compagnies de train et de bus</b></p>
+<hr style="margin:auto;width:90%;">
+<p><b>Trajets populaires</b></p>
+<hr style="margin:auto;width:90%;">
+<p><b>Horaires de trains nationaux</b></p>
+<hr style="margin:auto;width:90%;">
+<p><b>Horaires de trains internationaux</b></p>
+<hr style="margin:auto;width:90%;">
+<p><b>Destinations populaires & gares</b></p>
+<hr style="margin:auto;width:90%;">
+</div>
+
+<div class="logo-footer">
+<img src="https://www.thetrainline.com/content/sgf/paypal.svg" alt="paypal"/>
+<img src="https://www.thetrainline.com/content/sgf/apple-pay.svg" alt="applePay"/>
+<img src="https://www.thetrainline.com/content/sgf/google-pay.svg" alt="googlePlay"/>
+<img src="https://www.thetrainline.com/content/sgf/national-rail.svg" alt="nationalRail"/>
+<br /><br />
+<sub>Copyright © 2022 Trainline.com Limited ou ses entreprises affiliées. Tous droits réservés.</sub><br />
+<sub>Trainline.com Limited est immatriculée en Angleterre et au Pays de Galles. Numéro d'immatriculation : 3846791. Siège social : 120 Holborn, London EC1N 2TD, Royaume-Uni. Numéro de TVA : 791 7261 06.</sub>
+
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+	<div class="modal-header1">
+	  <span onclick="span1()" class="close">&times;</span>
+	  <h2>&nbsp</h2>
+	</div>
+	
+   
+
+	<div class="modal-body">
+	  <p>Billet de train et de bus</p>
+	  <p>Achat de carte ou abonnement</p>
+	  <p>Professionnel</p>
+	  <p>Télécharger l'app</p>
+	  <p>Recup'Retard</p>
+	  <p>Aide</p>
+	</div>
+	<div class="modal-footer1">
+	 <h2>&nbsp</h2>
+	</div>
+  </div>
+
+</div>
+
+	</body>
+</html>

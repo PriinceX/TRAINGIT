@@ -1,0 +1,199 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+}
+
+h3{
+	font-family: arial;
+	margin: 20px;
+	font-weight: 900;
+}
+
+
+h5{
+	font-family: arial;
+	margin: 20px;
+	font-weight: 900;
+}
+
+#span-icon{
+	margin: auto;
+	text-align: center;
+	width: 45%;
+	margin-left: 40%;
+}
+
+#icon{
+	
+	margin: auto;
+	width: 20%;
+	margin: 5px;
+}
+
+img{
+	width: 40%;
+	margin: 10px;
+}
+
+
+.nav{
+	display: flex;
+		width: 100%;
+		background-color: #fff;
+		/* position: fixed; */
+		z-index:10;
+	}
+.info{
+	width: 80%;
+	margin: auto;
+	font-size: 90%;
+	
+}
+
+
+h6{
+	margin: 10px;
+	font-weight: 700;
+	font-family: arial;
+	width: 80%;
+	margin: auto;
+}
+label{
+   	font-size: 85%;
+   	margin-left: 10%;
+   	margin-bottom: 2%;
+   	margin-top: 0px;
+}
+
+form{
+	margin-top: 50px;
+}
+
+input{
+	display: block;
+	width:80%; 
+	padding: 2%;
+	margin:0 auto;
+	outline: none;
+}
+
+.date{
+	width: 100%;
+	text-align: center;
+}
+
+.input_date{
+	
+	padding: 7px 20px 7px 20px;
+	display: inline-block;
+}
+
+button{
+	width: 83%;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: rgb(0,168,143);
+	color: #ffffff;
+	margin: auto;
+	margin-top: 40px;
+	display: block;
+	font-size: 17px;
+	border:none;
+	font-weight: 700;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 20; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	-webkit-animation-name: fadeIn;
+	 /* Fade in the background */
+	-webkit-animation-duration: 0.4s;
+	animation-name: fadeIn;
+	animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: fixed;
+	bottom: 0;
+	background-color: #fefefe;
+	width: 100%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: slideIn;
+	animation-duration: 0.4s;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+  } 
+  
+  /* The Close Button */
+  .close {
+	color: black;
+	float: right;
+	
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  .modal-header1 {
+	padding: 7px 13px;
+	background-color: #fff;
+	color: black;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+  }
+  
+  .modal-body {padding: 40px 16px;}
+  
+  .modal-body p{
+  font-weight:700;
+  line-height:30px;
+  font-size:1.2em;
+  }
+  
+  
+  .modal-footer1 {
+	padding: 2px 16px;
+	background-color: #fff;
+	color: #000;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+  
+	from {bottom: -300px; opacity: 0} 
+	to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+	from {bottom: -300px; opacity: 0}
+	to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }
+  

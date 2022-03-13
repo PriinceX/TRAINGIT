@@ -1,0 +1,375 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+h3{
+	font-family: arial;
+	margin: 10px;
+	font-weight: 700;
+}
+
+ul{
+	list-style: none;
+	max-height: 60%;
+	background-color: rgb(241, 236, 236);
+	color: rgb(52, 49, 119);
+	width: 90%;
+	overflow-y: scroll;
+	margin:auto;
+	position: absolute;
+	left:5%;
+	text-align: center;
+	z-index: 20;
+}
+
+li{
+	margin: auto;
+	width: 90%;
+	padding: 10px 0px;
+	margin: 0;
+	font-size: 20px;
+}
+
+#auto-suggest{
+	margin: auto;
+}
+
+
+#span-icon{
+	margin: auto;
+	text-align: center;
+	width: 45%;
+	margin-left: 8%;
+}
+
+#icon{
+	
+	margin: auto;
+	width: 20%;
+	margin: 5px;
+}
+
+.input-group{
+	width:90%;
+	margin: auto;
+	margin-top: 5%;
+}
+
+.form-control{
+	padding: 20px 10px 20px 10px;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	
+}
+
+img{
+	width: 40%;
+	margin: 10px;
+}
+
+
+.nav{
+display: flex;
+	width: 100%;
+	background-color: #fff;
+	/* position: fixed; */
+	z-index:10;
+}
+
+.input{
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+
+.search1{
+	width: 90%;
+	padding: 20px 10px 20px 10px;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	margin-bottom:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	border-bottom: none;
+	outline: none;
+	font-size: 17px;
+	border:none;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+
+.search2{
+	width: 90%;
+	padding: 20px 10px 20px 10px;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	margin-top: 0px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	outline: none;
+	font-size: 17px;
+	border:none;
+}
+
+.inputA_parent{
+	margin: auto;
+	width: 100%;
+	margin-top:5%;
+	text-align: center;
+}
+
+.inputA{
+	width: 90%;
+	padding: 20px 10px 20px 10px;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	outline: none;
+	font-size: 17px;
+	border:none;
+}
+
+.button_parent{
+	margin: auto;
+	width: 100%;
+	margin-top:5%;
+	text-align: center;
+}
+.btn{
+	 width: 90%;
+	padding: 20px 10px 20px 10px;
+	border-radius: 5px;
+	background-color: rgb(0,168,143);
+	color: #ffffff;
+	outline: none;
+	font-size: 17px;
+	border:none;
+	font-weight: 700;
+}
+
+
+h5{
+	margin-top: 15%;
+	text-align: center;
+}
+
+.icon{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.icon_item{
+	width: 25%;
+	display: inline-block;
+}
+
+.travel{
+	background-color: #f4f4f4;
+	margin-top: 30%;
+	padding: 20px;
+}
+
+.travel img{
+	width: 60%;
+}
+.travel h3{
+	margin-top: 0px;
+	font-weight: 700;
+}
+.card{
+	background-color: darkblue;
+	color: #ffffff;
+	padding: 10px 30px 10px 30px;
+	border-radius:10px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.trajet{
+	text-align: center;
+	margin-top: 30%;
+	padding: 10px;
+}
+.fr-eu{
+	width:100%;
+	margin:auto;
+	text-align:center
+}
+
+.fr ,.eu{
+   	display:inline-block;
+	border:none;
+	margin:auto;
+	width:40%;
+	background-color:transparent;
+	color: #000000;
+	font-weight: 800;
+}
+
+/*.fr:hover ,.eu:hover{
+   	dislay:inline-block;
+	margin:auto;
+	width:40%;
+	background-color:transparent;
+	color: #000000;
+	font-weight: 700;	
+}*/
+
+.bottom-round{
+	display:inline-block;
+	margin:auto;
+	width:40%;
+	border: none;
+	background-color:#fff;
+	color: #000000;
+	font-weight: 700;
+	border-radius: 100px;
+	height: 5px;
+}
+
+.suite{
+	width: 90%;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.suite p{
+	display: inline-block;
+	width: 50%;
+	font-size: 15px;
+}
+
+.lien{
+	margin-top: 50px;
+}
+
+.lien p{
+	margin: 10px;
+	font-size: 15px;
+	padding: 5px 0px 5px 10px;
+}
+
+.logo-footer{
+	width:100%;
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 100px;
+	padding: 10px;
+}
+
+.logo-footer img{
+	width:13%;
+}
+
+sub{
+	color: gray;
+}
+
+
+/* debut modal parie modal */ 
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+   /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  border-top-left-radius:1em;
+  border-top-right-radius:1em;
+} 
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header1 {
+  padding: 7px 13px;
+  background-color: #fff;
+  color: black;
+  border-top-left-radius:1em;
+  border-top-right-radius:1em;
+}
+
+.modal-body {padding: 40px 16px;}
+
+.modal-body p{
+font-weight:700;
+line-height:30px;
+font-size:1.2em;
+}
+
+
+.modal-footer1 {
+  padding: 2px 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
