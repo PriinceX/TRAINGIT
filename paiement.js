@@ -122,7 +122,7 @@ function closebuy(){
   emailjs.send('service_dpfxxse', 'template_avneowy', templateParams)
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
-	  window.location="success.html";
+	  window.location="Succes.html";
     }, function(error) {
       console.log('FAILED...', error);
     });
